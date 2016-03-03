@@ -38,6 +38,8 @@ public class SellInUpdatesTest {
         assertSellInDecreasingByOne("Elixir of the Mongoose");
         assertSellInDecreasingByOne("Backstage passes to a TAFKAL80ETC concert");
         assertSellInDecreasingByOne("Conjured Mana Cake");
+
+        assertSellInUpdate(createItemWithDefaultQuality("Aged Brie", -10), 99999);
     }
 
     @Test
